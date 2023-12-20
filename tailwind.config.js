@@ -1,5 +1,7 @@
 module.exports = {
-  content: ["./**/*.html"],
+  content: ["./**/*.html",
+  "./node_modules/flowbite/**/*.js"
+],
   theme: {
     container: {
       center: true,
@@ -9,6 +11,12 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('flowbite/plugin')
+  ]
   
+  
+
+
 };
