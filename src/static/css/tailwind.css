@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Your Custom CSS Goes here*/
+
+h1 {
+  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
+}
+
+h3 {
+  @apply text-2xl font-bold mb-3;
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('/src/fonts/MonaSans.woff2') format('woff2 supports variations'),
+    url('/src/fonts/MonaSans.woff2') format('woff2-variations');
+  font-weight: 200 300 400 500 900;
+  font-stretch: 75% 100% 125%;
+}
+
+html {
+  font-family: 'Mona Sans';
+  font-stretch: 100%;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Mona Sans';
+  font-stretch: 125%;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: 'Mona Sans';
+  font-stretch: 125%;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: 'Mona Sans';
+  font-stretch: 125%;
+  font-weight: 300;
+}
+
+body {
+  font-family: 'Mona Sans';
+  font-stretch: 100%;
+  font-weight: 400;
+}
+
+/* Syntax Highlighting*/
+
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"] {
+  @apply bg-gray-800;
+}
